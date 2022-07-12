@@ -39,6 +39,7 @@ nav a{
 nav a:hover{
   border-bottom: 2px solid black;
   padding-bottom: 3px;
+  transition-duration: 0.2s;
 }
 
 .name{
@@ -237,13 +238,64 @@ nav a:hover{
   margin-left: 6%;
 }
 
+.img{
+    position: relative;
+}
+
 .img .img1{
   width: 100%;
   border-radius: 10px;
+  filter: brightness(90%);
+  transition: 0.3s;
+}
+
+.img .img1:hover{
+  filter: brightness(40%);
+  transition-duration: 0.5s;
 }
 
 .img .title{
   font-size: 100px;
+}
+
+.works .img h2{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-size: 20px;
+  color: white;
+  visibility: hidden;
+}
+
+.works .img a{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  visibility: hidden;
+}
+
+.works .img:hover h2{
+  visibility: visible;
+}
+
+.works .img:hover a{
+  visibility: visible;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(9,207,255);
+}
+
+.works .img:last-child h2{
+  top: 40%;
+  left: 38%;
+}
+
+
+.works .img:nth-child(2) h2{
+  top: 40%;
+  left: 38%;
 }
 
 
