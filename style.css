@@ -1,0 +1,104 @@
+*{box-sizing: border-box; margin: 0;}
+body{
+  font-family:'Montserrat';
+}
+nav {
+  height: 65px;
+}
+nav a{
+  margin: 1%;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover{
+  border-bottom: 2px solid black;
+  padding-bottom: 3px;
+}
+
+.name{
+  float: left;
+}
+
+.links{
+  text-align: right;
+  padding: 25px;
+  font-size: 25px;
+  color: black;
+}
+
+.home_welcome h1{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.home_welcome h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.animation_container{
+  width: 100%;
+  height: 100px;
+}
+.platform_container{
+  width: 40%;
+  border: 2px solid black;
+  margin: auto;
+  height: 100px;
+}
+
+.aboutme_container{
+  margin-top: 300px;
+  height: 650px;
+  background-color: rgb(9,207,255);
+}
+
+.intro{
+  color: black;
+}
+.intro h1{
+  text-align: center;
+  margin: auto;
+  padding-top: 150px;
+}
+.intro p {
+  padding-top: 30px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.intro .quote{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40px;
+}
+.intro h4{
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.occ_contain{
+  background-color: white;
+  border: 1px solid rgba(9,207,255, 0.4);
+  margin-top: -150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.occupations_container{
+  text-align: center;
+}
+
+.occupation{
+  font-size: 10px;
+  margin-top: 150px;
+  width: 30%;
+  float: left;
+}
