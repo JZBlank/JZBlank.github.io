@@ -1,4 +1,29 @@
 *{box-sizing: border-box; margin: 0;}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #f5f5f5;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #999;
+}
+
 body{
   font-family:'Montserrat';
 }
@@ -93,23 +118,24 @@ nav a:hover{
   margin-right: auto;
   width: 95%;
   border-radius: 10px;
-  height: 650px;
+  height: 450px;
   box-shadow: 1px 5px 10px gray;
+
 }
 
 .occupation{
   font-size: 10px;
   width: 33.33%;
   float: left;
-  height: 650px;
+  height: 350px;
 }
 
 .occupation:first-child{
-  border-right: 1px solid rgba(220,220,220, 0.4);;
+  border-right: 1px solid rgba(220,220,220, 0.4);
 }
 
 .occupation:last-child{
-  border-left: 1px solid rgba(220,220,220, 0.4);;
+  border-left: 1px solid rgba(220,220,220, 0.4);
 }
 
 .occupation_icons{
@@ -153,4 +179,32 @@ nav a:hover{
   list-style: none;
   font-size: 15px;
   line-height: 200%;
+}
+
+.occupation .button{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid rgb(9,207,255);
+  font-size: 20px;
+  background-color: rgb(9,207,255);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.occupation .button a{
+  text-decoration: none;
+  color: white;
+}
+
+.occupation .button:hover{
+  background-color: black;
+}
+
+footer{
+  background-color: rgb(9,207,255);
+  height: 100px;
+}
+footer .footer_container{
+  border: 2px solid black;
 }
