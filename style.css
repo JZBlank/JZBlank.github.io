@@ -298,9 +298,25 @@ nav a:hover{
   left: 38%;
 }
 
-
 /* FOOTER */
-footer{
+.footer_container{
   background-color: rgb(9,207,255);
-  height: 50px;
+  height: auto;
+}
+
+footer .text{
+  padding-top: 2%;
+  text-align: center;
+}
+
+.footer_container .icons{
+  text-align: center;
+}
+
+
+footer .icons img{
+  margin: 1%;
+  width: 4%;
+  border-radius: 45px;
+  border: 2px solid white;
 }
