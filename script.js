@@ -1,4 +1,7 @@
 var i = 0;
+var audio = new Audio("sound/quack.mp3")
+var loading_done = false;
+
 function loading() {
   if (i == 0) {
     i = 1;
@@ -9,11 +12,19 @@ function loading() {
       if (width >= 100) {
         clearInterval(id);
         i = 0;
-      } else {
+        loading_done = true;
+      }
+      else {
         width++;
         elem.style.width = width + "%";
         elem.innerHTML = width  + "%";
       }
     }
+  }
+}
+
+function play_audio() {
+  if(loading_done == true){
+      audio.play();
   }
 }
