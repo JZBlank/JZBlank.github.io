@@ -53,6 +53,50 @@ nav a:hover{
   color: black;
 }
 
+.home_welcome img{
+  position: absolute;
+  left: 40vw;
+  bottom: 20vw;
+  width: 5%;
+}
+
+.chicken_container{
+  margin-top: 50px;
+}
+
+.chicken_container img{
+  margin-left: 30vw;
+  width: 4%;
+  animation-name: moveDuck;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes moveDuck {
+  0%{}
+  100%{transform: translateX(450px);}
+}
+
+.message .duck_message{
+  position: absolute;
+  left: 70vw;
+  top: 20vw;
+  opacity: 0;
+  animation-name: duck_message;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@keyframes duck_message {
+  0%{}
+  50%{opacity: 50%}
+  100%{opacity: 100%;}
+}
+
 .home_welcome h1{
   font-size: 3.9vw;
   text-align: center;
@@ -63,7 +107,6 @@ nav a:hover{
   text-align: center;
   padding-top: 10px;
   font-size: 1.3vw;
-
 }
 
 /* ANIMATION HERE */
@@ -95,8 +138,8 @@ nav a:hover{
   width: 40%;
   border: 2px solid black;
   margin: auto;
-  margin-top: 90px;
   height: 100px;
+  margin-top: -5px;
 }
 
 .aboutme_container{
