@@ -30,6 +30,7 @@ body{
 nav {
   height: 65px;
 }
+
 nav a{
   margin: 1%;
   text-decoration: none;
@@ -37,7 +38,7 @@ nav a{
 }
 
 nav a:hover{
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid orange;
   padding-bottom: 3px;
   transition-duration: 0.2s;
 }
@@ -55,58 +56,57 @@ nav a:hover{
 
 .chicken_container{
   margin-top: 50px;
-}
-
-
-.home_welcome img{
-  margin-left: 30vw;
-  top: 9.5vw;
-  width: 3vw;
-  left: 77.5vw;
-  position: absolute;
-  border: 1px solid black;
+  margin-bottom: 5px;
+  overflow: auto;
 }
 
 .chicken_container img{
-  margin-left: 65vw;
   width: 4%;
+  float: left;
+  margin-left: 60vw;
 }
 
 .message{
-  position: absolute;
-  left: 70vw;
-  top: 24vw;
-  border: 1px solid black;
-  border-radius: 10px;
   padding: 5px;
+  margin-top: -100px;
+  border: 1px solid red;
 }
 
 .message .duck_message{
+  border-radius: 10px;
+  width: fit-content;
+  float: left;
+  border: 1px solid black;
   animation-fill-mode: forwards;
   animation-name: fadeMessage;
   animation-delay: 5s;
+  padding: 5px;
+  animation-duration: 1s;
 }
 
 @keyframes fadeMessage {
   0%{}
-  50%{opacity: 50%;}
+  50%{opacity: 30%;}
   100%{opacity: 0%;}
 }
 
 .message .click_message{
-  position: absolute;
-  top: 0;
-  opacity: 0%;
-  margin-top: 5px;
-  animation-name: showMessage;
-  animation-delay: 5s;
+  border-radius: 10px;
+  width: fit-content;
+  float: left;
+  border: 1px solid black;
   animation-fill-mode: forwards;
+  animation-name: showMessage;
+  animation-delay: 6s;
+  animation-duration: 1s;
+  padding: 5px;
+  opacity: 0%;
 }
 
 @keyframes showMessage{
   0%{}
   50%{opacity: 50%;}
-  100%{opacity: 100%;}
+  100%{opacity: 100%; transform: translateX(-85px)}
 }
 
 .home_welcome h1{
