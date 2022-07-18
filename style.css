@@ -53,60 +53,103 @@ nav a:hover{
   color: black;
 }
 
-.home_welcome img{
-  position: absolute;
-  left: 40vw;
-  bottom: 20vw;
-  width: 5%;
-}
-
 .chicken_container{
   margin-top: 50px;
 }
 
-.chicken_container img{
+
+.home_welcome img{
   margin-left: 30vw;
-  width: 4%;
-  animation-name: moveDuck;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+  top: 9.5vw;
+  width: 3vw;
+  left: 77.5vw;
+  position: absolute;
+  border: 1px solid black;
 }
 
-@keyframes moveDuck {
-  0%{}
-  100%{transform: translateX(450px);}
+.chicken_container img{
+  margin-left: 65vw;
+  width: 4%;
+}
+
+.message{
+  position: absolute;
+  left: 70vw;
+  top: 24vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .message .duck_message{
-  position: absolute;
-  left: 70vw;
-  top: 20vw;
-  opacity: 0;
-  animation-name: duck_message;
-  animation-delay: 5s;
   animation-fill-mode: forwards;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 10px;
+  animation-name: fadeMessage;
+  animation-delay: 5s;
 }
 
-@keyframes duck_message {
+@keyframes fadeMessage {
   0%{}
-  50%{opacity: 50%}
+  50%{opacity: 50%;}
+  100%{opacity: 0%;}
+}
+
+.message .click_message{
+  position: absolute;
+  top: 0;
+  opacity: 0%;
+  margin-top: 5px;
+  animation-name: showMessage;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showMessage{
+  0%{}
+  50%{opacity: 50%;}
   100%{opacity: 100%;}
 }
 
 .home_welcome h1{
   font-size: 3.9vw;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  padding-bottom: 5px;
 }
 
-.home_welcome h3 {
-  text-align: center;
-  padding-top: 10px;
+@keyframes fadeIn{
+  0%{}
+  100%{opacity: 100%; transform: translateY(90px);}
+}
+
+.home_welcome .subtitle_container{
+  width: 100%:
+  border: 1px solid black;
+}
+
+.home_welcome .subtitle_container h3 {
+  text-align: left;
+  padding-top: 5px;
   font-size: 1.3vw;
+  animation-name: fadeIn_subtitle;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  opacity: 0%;
+  width: fit-content;
+}
+
+@keyframes fadeIn_subtitle{
+  0%{}
+  100%{opacity: 100%; transform: translateX(110%);}
 }
 
 /* ANIMATION HERE */
@@ -117,7 +160,6 @@ nav a:hover{
   position: absolute;
   left: 82.7%;
   top: 30.5%;
-  animation-name: swing;
   transform-origin: top;
   animation-iteration-count: infinite;
   animation-duration: 3s;
@@ -134,12 +176,22 @@ nav a:hover{
 }
 /* END ANIMATION */
 
-.platform_container{
+#load_bar{
   width: 40%;
-  border: 2px solid black;
+  background-color: #ddd;
   margin: auto;
-  height: 100px;
+  height: 30px;
   margin-top: -5px;
+  box-shadow: 1px 1px 5px black;
+}
+
+#progress_bar{
+  width: 0%;
+  height: 30px;
+  background-color: orange;
+  text-align: center;
+  line-height: 30px;
+  color: white;
 }
 
 .aboutme_container{
@@ -151,11 +203,13 @@ nav a:hover{
 .intro{
   color: black;
 }
+
 .intro h1{
   text-align: center;
   margin: auto;
   padding-top: 150px;
 }
+
 .intro p {
   padding-top: 30px;
   text-align: center;

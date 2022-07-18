@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <body onload="loading()">
+    <body onload="changeTxt()">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joyce Zhang</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Montserrat&display=swap" rel="stylesheet">
-
 
   </head>
   <header>
@@ -25,18 +27,25 @@
     <div class="home_welcome">
       <h1>Aspiring full-stack web developer! </h1>
       <!--<div class="animation_container"></div>-->
-      <h3>I have a love and hate relationship with coding</h3>
+      <div class="subtitle_container">
+        <h3>I have a love and hate relationship with coding</h3>
+      </div>
     </div>
 
     <div class="chicken_container">
-      <img src="img/chicken.png" alt="Chicken">
+        <img src="img/chicken.png" alt="Chicken">
     </div>
     <div class="message">
-      <div class="duck_message">Hi there</div>
+      <div class="duck_message">loading...</div>
+      <div class="click_message">click me!</div>
+      </div>
     </div>
 
 
-    <div class="platform_container"></div>
+    <div id="load_bar">
+      <div id="progress_bar">0%</div>
+    </div>
+
     <div class="aboutme_container">
       <div id="_profile" class="intro">
         <h1>Hi, I'm Joyce. Nice to meet you.</h1>
