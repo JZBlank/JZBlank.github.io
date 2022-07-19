@@ -42,7 +42,17 @@ nav a:first-child{
   padding: 0;
 }
 
-nav a:hover{
+nav .link1:hover{
+  background-color: orange;
+  transition-duration: 0.3s;
+}
+
+nav .link2:hover{
+  background-color: orange;
+  transition-duration: 0.3s;
+}
+
+nav .link3:hover{
   background-color: orange;
   transition-duration: 0.3s;
 }
@@ -50,6 +60,14 @@ nav a:hover{
 .name{
   float: left;
 }
+
+.links img{
+  width: 2.5%;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
 
 .links{
   text-align: right;
@@ -253,16 +271,30 @@ nav a:hover{
 /* END WAVE rgb(9,207,255); */
 
 .aboutme_container{
-  height: 730px;
+  height: 570px;
   background-color: white;
 }
 
-.line{
+.line_orange{
   margin-top: 20px;
   border-bottom: 5px solid orange;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+}
+
+.gray_container{
+  background-color: rgba(0,0,0,0.8);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 350px;
+}
+
+.gray_container h1{
+  text-align: center;
+  padding-top: 30px;
+  color: white;
 }
 
 .orange_container{
@@ -304,22 +336,26 @@ nav a:hover{
   text-align: center;
 }
 
+.into h4{
+  padding-bottom: 100px;
+}
+
 .occupations_bg_container{
   text-align: center;
-  height: 600px;
-  margin-top: -250px;
+  height: 550px;
 }
 
 .occupations_container{
   background-color: white;
-  border: 1px solid rgba(9,207,255, 0.4);
-  margin-top: 10px;
+  border: 1px solid rgba(0,0,0,0);
+  margin-top: -250px;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
   border-radius: 10px;
-  height: 450px;
+  height: 500px;
   box-shadow: 1px 5px 10px gray;
+  padding-top: 10px;
 }
 
 .occupation{
@@ -401,6 +437,36 @@ nav a:hover{
   box-shadow: 1px 1px 3px gray;
 }
 
+.occupationInfo_bg_container{
+  background-color: white;
+  height: 900px;
+}
+
+.occupationInfo_container{
+  border-radius: 300px;
+  padding-top: 100px;
+}
+
+.occupationInfo_container h1{
+  padding-top: 10px;
+  height: 50px;
+  text-align: center;
+}
+
+.occupationInfo_container p{
+  text-align: center;
+  line-height: 200%;
+}
+
+.blue_line{
+  width: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .work_container{
   height: 500px;
 }
@@ -427,13 +493,14 @@ nav a:hover{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .work_container .projects_container .works .img{
   float: left;
-  width: 25%;
-  border-radius: 10px;
-  margin-left: 6%;
+  width: 33%;
+  padding: 10px;
 }
 
 .img a, h2{
@@ -453,16 +520,28 @@ nav a:hover{
 
 .work_container .projects_container .works .img img{
   height: 200px;
-  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
 }
 
+.works .description{
+  height: 55px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.works .description h3{
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
 .img{
   position: relative;
 }
 
 .img .img1{
   width: 100%;
-  border-radius: 10px;
   filter: brightness(90%);
   transition: 0.3s;
 }
@@ -531,35 +610,4 @@ footer .icons img{
   width: 4%;
   border-radius: 45px;
   border: 2px solid white;
-}
-
-.occupationInfo_bg_container{
-  background-color: white;
-  height: 300px;
-}
-
-.occupationInfo_container{
-  border-radius: 300px;
-}
-
-.occupationInfo_container h1{
-  padding-top: 5px;
-  margin-left: 50px;
-  height: 50px;
-  border-left: 5px solid white;
-  padding-left: 10px;
-}
-
-.occupationInfo_container p{
-  text-align: center;
-  line-height: 200%;
-}
-
-.blue_line{
-  width: 90%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 2px solid rgb(9,207,255);
-  margin-left: auto;
-  margin-right: auto;
 }

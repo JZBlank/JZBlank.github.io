@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joyce Zhang</title>
+    <link rel="icon" href="http://example.com/favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
@@ -17,6 +18,7 @@
   </head>
   <header>
     <nav class="links">
+      <img src="img/pfp.png" alt="Profile">
       <a href="#"><div class="name">Joyce Zhang</div><a>
       <a href="#_profile" class="link1">about</a>
       <a href="#_projects" class="link2">work</a>
@@ -52,7 +54,7 @@
     <div class="aboutme_container">
       <div id="_profile" class="intro">
         <h1>Hi, I'm Joyce. Nice to meet you.</h1>
-        <div class="line"></div>
+        <div class="line_orange"></div>
         <p>I'm a rising senior studying computer science at Hunter College. I was born
           and raised in Brooklyn, New York and I'm currently interested in pursuing a career
           in the tech industry - specifically as a full-stack web developer. I'm eager to learn
@@ -61,6 +63,9 @@
         <div class="quote"><em>"Ever tried. Ever failed. No matter. Try again. Fail again. Fail better."</em></div>
         <h4>— Samuel Beckett</h4>
       </div>
+    </div>
+    <div class="gray_container">
+      <h1>Who I am:</h1>
     </div>
     <div class="orange_container"></div>
 
@@ -77,17 +82,7 @@
           <h1>Programmer</h1>
           <p>I love bringing my ideas to life through coding. Programming is something magical.</p>
           <div class="button"><a href="#">Learn More</a></div>
-          <!--
-          <p class="highlight_section">Languages I know:</p>
-          <p class="list_horizontal">HTML, CSS, JavaScript, Python, C++, Java</p>
-          <p class="highlight_section2">Dev Tools:</p>
-          <ul>
-            <li>Atom</li>
-            <li>Visual Studio Code</li>
-            <li>Github</li>
-            <li>Eclipse</li>
-          </ul>
-          -->
+
         </div>
         <div class="occupation">
           <img src="img/student.png" alt="Image of Student" class="occupation_icons">
@@ -95,19 +90,6 @@
           <p>I welcome constructive criticism. I'm always eager to better myself both as a person and my skills.
           The sky is the limit.</p>
           <div class="button"><a href="#">Learn More</a></div>
-          <!--
-          <p class="highlight_section">Experiences that changed me: </p>
-          <ul>
-            <li>People, Programs, Life</li>
-          </ul>
-          <p class="highlight_section2">Programs:</p>
-          <ul>
-            <li>SWE EverUp Micro-Credential Program</li>
-            <li>Break Through Tech AI</li>
-            <li>CodePath</li>
-            <li></li>
-          </ul>
-         -->
         </div>
       </div>
     </div>
@@ -115,8 +97,23 @@
     <div class="occupationInfo_bg_container">
       <div class="occupationInfo_container">
         <h1 id="_artist_info" class="aboutTitle">Artist & Designer</h1>
+        <div class="blue_line"></div>
         <p>Things I enjoy creating: Artworks, Animations, Games, Websites</p>
         <p>Art & Design Tools: Paint Tool Sai, Piskel, Figma, Sony Vegas Pro</p>
+      </div>
+
+      <div class="occupationInfo_container">
+        <h1 id="_coder_info" class="aboutTitle">Programmer</h1>
+        <div class="blue_line"></div>
+        <p>Languages I know: HTML, CSS, JavaScript, Python, C++, Java</p>
+        <p>Dev Tools: Atom, Visual Studio Code, Github, Eclipse</p>
+      </div>
+
+      <div class="occupationInfo_container">
+        <h1 id="_student_info" class="aboutTitle">Student</h1>
+        <div class="blue_line"></div>
+        <p>Experiences that changed me: Mentors, peers and life experiences</p>
+        <p>Programs I participated in: SWE EverUp Micro-Credential Program, Break Through Tech AI, CodePath(Android Application, Cybersecurity) </p>
       </div>
     </div>
 
@@ -130,13 +127,22 @@
             <h2>2D Java Game</h2>
             <a href="https://github.com/JZBlank/My2DGame" target="_blank" class="work_link">More Info</a>
             <img src="img/java_game.png" alt="2DGame" class="img1">
+            <div class="description">
+              <h3>My first 2D Java Game</h3>
+            </div>
           </div>
           <div class="img">
             <a href="https://jzblank.github.io/microcredential/project1_Zhang/project1.html" target="_blank">Visit Page</a>
             <img src="img/climate_change_website.png" alt="img" class="img1">
+            <div class="description">
+              <h3>Static WebPage</h3>
+            </div>
           </div>
           <div class="img">
             <img src="img/sample_image.jpg" alt="img" class="img1">
+            <div class="description">
+              <h3>Coming soon</h3>
+            </div>
           </div>
         </div>
       </div>
