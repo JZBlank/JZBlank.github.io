@@ -25,6 +25,7 @@ function loading() {
 
 function play_audio() {
   if(loading_done == true){
+      audio.volume = 0.2;
       audio.play();
   }
 }
